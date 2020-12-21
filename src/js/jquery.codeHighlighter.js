@@ -69,9 +69,9 @@
      * @type {{tabSize: number, linebreaks: boolean}}
      */
     $.fn.codeHighlighter.defaults = {
-        "highlight": true, // Whether or not the highlighting should take place. Set this to false to disable the code highlighting from being processed
-        "linebreaks": true, // Whether linebreaks should be added by default to the final formatted code
-        "tabSize": 4, // If the code uses linebreaks, this is the size that each tab should be for each line in the outputted code
+        "highlight": true,    // Whether or not to process the highlighting. Set to false to disable the highlighting from taking place.
+        "linebreaks": true,   // Whether or not linebreaks should be added to the final outputted code
+        "tabSize": 4,         // The size each tab should be in the outputted code (only applicable if the outputted code uses linebreaks)
     };
 
     /**
