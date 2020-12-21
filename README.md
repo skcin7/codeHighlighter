@@ -85,4 +85,4 @@ Please see [CONTRIBUTE.md](CONTRIBUTE.md) for information regarding contributing
 
 ## Demo
 
-Please see the [demo page](https://skcin7.github.io/codeHighlighter/demo/) for an example of how codeHighlighter works, and some of the things you can do with it.
+Please refer to the [demo page](https://skcin7.github.io/codeHighlighter/demo/) for some examples which demonstrate how codeHighlighter works.
