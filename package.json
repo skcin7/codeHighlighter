@@ -2,7 +2,7 @@
   "name": "@nicholas-morgan/code-highlighter",
   "title": "codeHighlighter",
   "description": "A jQuery plugin to add HTML markup to various types of computer programming code to make it display and appear beautifully within a HTML document.",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "homepage": "https://skcin7.github.io/codeHighlighter/",
   "author": {
     "name": "Nick Morgan",
@@ -38,7 +38,7 @@
     "code highlighting",
     "highlight json code"
   ],
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "distMinifiedJs": "uglifyjs src/js/jquery.codeHighlighter.js -c -m --comments '/^!|@(?:license|preserve)/' > dist/js/jquery.codeHighlighter.min.js",
     "distJs": "cp src/js/jquery.codeHighlighter.js dist/js/",
