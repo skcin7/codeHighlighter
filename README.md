@@ -1,5 +1,5 @@
 # codeHighlighter
-> A jQuery plugin t
+> A jQuery plugin to add HTML markup to various types of computer programming code to make it display and appear beautifully within a HTML document.
 
 ## How to use
 
