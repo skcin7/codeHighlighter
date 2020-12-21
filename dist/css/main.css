@@ -1,0 +1,16 @@
+.codeHighlighter {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 14px;
+  line-height: 1.2;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+  .codeHighlighter.codeHighlighter[data-language=json] .codeHighlighter__json_string {
+    color: green; }
+  .codeHighlighter.codeHighlighter[data-language=json] .codeHighlighter__json_number {
+    color: darkorange; }
+  .codeHighlighter.codeHighlighter[data-language=json] .codeHighlighter__json_boolean {
+    color: blue; }
+  .codeHighlighter.codeHighlighter[data-language=json] .codeHighlighter__json_null {
+    color: magenta; }
+  .codeHighlighter.codeHighlighter[data-language=json] .codeHighlighter__json_key {
+    color: red; }

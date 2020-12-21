@@ -1,0 +1,27 @@
+.codeHighlighter {
+    // General properties to be applied regardless of the language:
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 14px;
+    line-height: 1.2;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+
+    // JSON markup:
+    &.codeHighlighter[data-language=json] {
+        & .codeHighlighter__json_string {
+            color: green;
+        }
+        & .codeHighlighter__json_number {
+            color: darkorange;
+        }
+        & .codeHighlighter__json_boolean {
+            color: blue;
+        }
+        & .codeHighlighter__json_null {
+            color: magenta;
+        }
+        & .codeHighlighter__json_key {
+            color: red;
+        }
+    }
+}

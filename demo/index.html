@@ -2,37 +2,30 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>codeHighlighter v0.0.1 - By Nick Morgan</title>
-
-        <!-- <link id="codeHighlighterTheme" rel="stylesheet" href="css/themes/tab.css"> -->
-        <link rel="stylesheet" href="css/labs.css">
-
-        <script src="../dist/lib/jquery-3.5.1.min.js"></script>
-        <script src="../dist/jquery.codeHighlighter.min.js"></script>
-        <script>
-            (function($) {
-                $.codeHighlighter();
-            })(jQuery);
-
-            $(document).ready(function() {
-                //
-            });
-        </script>
-
+        <title>codeHighlighter Demo - By Nick Morgan</title>
+        <link rel="stylesheet" href="./demo.css"/>
+        <link rel="stylesheet" href="../dist/css/main.css"/>
     </head>
     <body>
-        <div class="header">
-            <a href="https://nicholas-morgan.com/" class="logo">Nick Morgan</a>
-            <a href="https://nicholas-morgan.com/2013/01/codeHighlighter-jquery-plugin" class="view-article">View Article</a>
-        </div>
+        <header id="header">
+            <a href="https://nicholas-morgan.com/" class="branding">Nick Morgan</a>
+            <a href="https://nicholas-morgan.com/2013/01/codeHighlighter-jquery-plugin" class="github_repository">GitHub Repository</a>
+        </header>
         <div class="container">
-            <h1>
-                codeHighlighter Demo
-            </h1>
-            <p>See the <a href="https://github.com/nicholas-morgan/codeHighlighter/blob/master/CHANGELOG.md" target="_blank">changelog</a> for more information.</p>
-
-            <p>//TODO</p>
+            <h1>codeHighlighter - Demo</h1>
+            <div class="codeHighlighter" data-language="json">{"some_json_key": "some_json_value", "etc": "etc"}</div>
         </div>
 
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="../dist/js/jquery.codeHighlighter.js"></script>
+        <script>
+            (function($) {
+                $.codeHighlighter({
+                    "highlight": true,   // Whether the highlighting should take place or not. In case for some reason you don't want to disable it, set to false. If you set to true or omit this setting, the highlighting will take place.
+                    "linebreaks": true,  // Whether the displayed code should be displayed with linebreaks or not.
+                    "tabSize": 4,        // What the size of each tab should be (only applicable when using linebreaks)
+                });
+            })(jQuery);
+        </script>
     </body>
 </html>

@@ -1,0 +1,55 @@
+{
+  "name": "codeHighlighter",
+  "title": "codeHighlighter",
+  "description": "A jQuery plugin to add HTML markup to various types of computer programming code to make it display and appear beautifully within a HTML document.",
+  "version": "1.0.0",
+  "homepage": "https://skcin7.github.io/codeHighlighter/",
+  "author": {
+    "name": "Nick Morgan",
+    "email": "nick@nicholas-morgan.com",
+    "url": "https://nicholas-morgan.com",
+    "twitter": "@skcin7",
+    "github": "https://github.com/skcin7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skcin7/codeHighlighter"
+  },
+  "bugs": {
+    "url": "https://github.com/skcin7/codeHighlighter/issues"
+  },
+  "license": {
+    "name": "MIT",
+    "url": "http://opensource.org/licenses/MIT"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "jquery",
+    "plugin",
+    "codehighlighter",
+    "codeHighlighter",
+    "code highlighter",
+    "code markup",
+    "code markup html",
+    "code markup html highlighting",
+    "html highlighting",
+    "code highlighting",
+    "highlight json code"
+  ],
+  "main": "src/index.js",
+  "scripts": {
+    "distMinifiedJs": "uglifyjs src/js/jquery.codeHighlighter.js -c -m --comments '/^!|@(?:license|preserve)/' > dist/js/jquery.codeHighlighter.min.js",
+    "distJs": "cp src/js/jquery.codeHighlighter.js dist/js/",
+    "distSass": "cp src/sass/* dist/sass/",
+    "distCss": "node-sass src/sass -o dist/css",
+    "dist": "npm run distMinifiedJs && npm run distJs && npm run distSass && npm run distCss"
+  },
+  "devDependencies": {
+    "uglify-js": "^3.12.2"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
+}

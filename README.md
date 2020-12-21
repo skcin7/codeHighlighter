@@ -1,9 +1,11 @@
 # codeHighlighter
 > A jQuery plugin to add HTML markup to various types of computer programming code to make it display and appear beautifully within a HTML document.
+>
+> **Homepage:** [https://skcin7.github.io/codeHighlighter/](https://skcin7.github.io/codeHighlighter/)
 
 ## How To Use
 
-Simply include the `jquery.codeHighlighter.js` or the `jquery.codeHighlighter.min.js` file and place the following somewhere within the JavaScript code of your web application (NOTE: make sure **jQuery** is included too, obviously):
+Simply include the `jquery.codeHighlighter.js` (or the `jquery.codeHighlighter.min.js`) file and place the following somewhere within the JavaScript code of your web application (NOTE: make sure **jQuery** is included too, obviously):
 
 ## Initialize codeHighlighter
 
@@ -71,4 +73,4 @@ Please see [CONTRIBUTE.md](CONTRIBUTE.md) for information regarding contributing
 
 ## Demo
 
-You may find a demonstration at the [demo page](https://skcin7.github.io/codeHighlighter/demo/) which can help better show how codeHighlighter works and some of the things you can do with it.
+Please see the [demo page](https://skcin7.github.io/codeHighlighter/demo/) for an example of how codeHighlighter works, and some of the things you can do with it.
