@@ -37,20 +37,20 @@
         $codeHighlighterElems.each(function(index, thisCodeHighlighterElem) {
             let $thisCodeHighlighterElem = $(thisCodeHighlighterElem);
 
-            // the user may optionally omit this specific element from being highlighted if they set the "highlighted" data property to false.
-            let highlight = $thisCodeHighlighterElem.data('highlight');
-            if(highlight === false) {
-                console.log('this elem is not being highlighted');
-                return;
-            }
-
-            // // get settings to be used (which override the default settings)
+            // get settings to be used (which override the default settings)
             let thisElemSettings = $.extend($.fn.codeHighlighter.settings, {
+                "highlight": $thisCodeHighlighterElem.data('highlight'),
                 "linebreaks": $thisCodeHighlighterElem.data('linebreaks'),
                 "tabSize": $thisCodeHighlighterElem.data('tab-size'),
             });
 
             console.log(thisElemSettings);
+
+            // the user may optionally omit this specific element from being highlighted if they set the "highlighted" data property to false.
+            if(thisElemSettings.highlight === false) {
+                console.log('this elem is not being highlighted');
+                return;
+            }
 
             // format the code and update the DOM:
             let language = $thisCodeHighlighterElem.data('language'); // determine the type of programming language code that is being highlighted.
@@ -69,8 +69,9 @@
      * @type {{tabSize: number, linebreaks: boolean}}
      */
     $.fn.codeHighlighter.defaults = {
-        "linebreaks": true,
-        "tabSize": 4,
+        "highlight": true, // Whether or not the highlighting should take place. Set this to false to disable the code highlighting from being processed
+        "linebreaks": true, // Whether linebreaks should be added by default to the final formatted code
+        "tabSize": 4, // If the code uses linebreaks, this is the size that each tab should be for each line in the outputted code
     };
 
     /**
