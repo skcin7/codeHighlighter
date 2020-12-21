@@ -3,6 +3,16 @@
 >
 > **Homepage:** [https://skcin7.github.io/codeHighlighter/](https://skcin7.github.io/codeHighlighter/)
 
+## Installing with NPM
+
+To install codeHighlighter with NPM:
+
+```bash
+npm i @nicholas-morgan/code-highlighter
+```
+
+For more information, see the [NPM published package page](https://www.npmjs.com/package/@nicholas-morgan/code-highlighter).
+
 ## How To Use
 
 Simply include the `jquery.codeHighlighter.js` (or the `jquery.codeHighlighter.min.js`) file and place the following somewhere within the JavaScript code of your web application (NOTE: make sure **jQuery** is included too, obviously):
