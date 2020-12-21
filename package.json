@@ -45,7 +45,7 @@
     "distSass": "cp src/sass/* dist/sass/",
     "distCss": "node-sass src/sass -o dist/css",
     "dist": "npm run distMinifiedJs && npm run distJs && npm run distSass && npm run distCss",
-    "publishNpmPackage": "npm publish --access public"
+    "npmPublish": "npm publish --access public"
   },
   "devDependencies": {
     "uglify-js": "^3.12.2"
